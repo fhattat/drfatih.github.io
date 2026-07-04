@@ -4,443 +4,392 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Science Portfolio</title>
-    <!-- Google Fonts -->
+    <title>Fatih Hattatoglu, PhD — Data Scientist &amp; AI Consultant</title>
+    <meta name="description"
+        content="Fatih Hattatoglu, PhD. Data scientist, AI consultant, author, and educator. Machine learning, computer vision, MLOps, and data engineering projects, books, and articles.">
+    <meta name="author" content="Fatih Hattatoglu">
+    <link rel="canonical" href="https://drfatih.netlify.app/">
+    <!-- Open Graph (LinkedIn, Facebook) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://drfatih.netlify.app/">
+    <meta property="og:title" content="Fatih Hattatoglu, PhD — Data Scientist &amp; AI Consultant">
+    <meta property="og:description"
+        content="Data scientist, AI consultant, author, and educator with 25+ years of experience. Machine learning, computer vision, and MLOps projects, books, and interactive Tableau dashboards.">
+    <meta property="og:image" content="https://drfatih.netlify.app/assets/profile_new.png">
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Fatih Hattatoglu, PhD — Data Scientist &amp; AI Consultant">
+    <meta name="twitter:description"
+        content="Data scientist, AI consultant, author, and educator. ML, computer vision, and MLOps projects, books, and Tableau dashboards.">
+    <meta name="twitter:image" content="https://drfatih.netlify.app/assets/profile_new.png">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap"
         rel="stylesheet">
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <!-- Dynamic Background Blobs -->
-    <div class="bg-blob blob-1"></div>
-    <div class="bg-blob blob-2"></div>
-    <div class="bg-blob blob-3"></div>
-
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo">Fatih HATTATOGLU, PhD<span>.</span></a>
-            <div class="menu-toggle" id="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#books">Books</a></li>
-                <li><a href="#linkedin-activity">LinkedIn</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#tableau">Tableau</a></li>
-                <li><a href="#insights">Insights</a></li>
-                <li><a href="#contact">Connect</a></li>
-            </ul>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#top" class="wordmark">Fatih Hattatoglu, PhD</a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="site-nav" id="site-nav">
+                <a href="#about">About</a>
+                <a href="#teaching">Teaching</a>
+                <a href="#books">Books</a>
+                <a href="#projects">Projects</a>
+                <a href="#dashboards">Dashboards</a>
+                <a href="#writing">Writing</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <main class="main-content">
-        <!-- Hero Section -->
-        <section id="home" class="hero fade-in">
-            <div class="hero-content">
-                <div class="profile-pic-wrapper large">
-                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQHiySJMF2n5FQ/profile-displayphoto-scale_200_200/B4DZmGVV4uH0Ag-/0/1758895376360?e=2147483647&v=beta&t=RiaoOJu6IA1JPYizc4Z-t6h0PbXoCSfujZoR216MXRU"
-                        alt="Fatih HATTATOGLU" class="profile-pic">
-                </div>
-                <span class="badge">Available for Work 2026</span>
-                <h1 class="hero-title">Discovering insights through <span class="text-gradient">Data & AI</span></h1>
-                <p class="hero-subtitle">
-                    Hi, I'm a Data Scientist passionate about Machine Learning, Data Analytics, and solving complex
-                    problems with data-driven code.
-                </p>
-                <div class="hero-buttons">
-                    <a href="https://tr.linkedin.com/in/fatih-hattatoglu-phd" target="_blank" class="btn btn-primary"><i
-                            class="fab fa-linkedin"></i> LinkedIn Profile</a>
-                    <a href="#contact" class="btn btn-outline">Let's Connect</a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="glass-card terminal">
-                    <div class="terminal-header">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
-                    </div>
-                    <div class="terminal-body">
-                        <span class="prompt">~ $</span> import pandas as pd<br>
-                        <span class="prompt">~ $</span> import tensorflow as tf<br>
-                        <span class="prompt">~ $</span> model.fit(data, epochs=100)<br>
-                        <span class="prompt">~ $</span> status:<span class="success"> 'Ready for deployment'</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <main id="top">
 
-        <!-- LinkedIn Activity Section -->
-        <section id="linkedin-activity" class="section fade-in">
-            <h2 class="section-title">Latest from <span class="text-gradient">LinkedIn</span></h2>
-            <p class="section-desc">Connect with me on LinkedIn for daily insights on AI, Data Engineering, and the
-                future of technology.</p>
-            <div class="linkedin-grid">
-                <div class="linkedin-post-card glass-card">
-                    <div class="post-header">
-                        <i class="fab fa-linkedin linkedin-icon"></i>
-                        <span class="post-date">Recent Insight</span>
-                    </div>
-                    <div class="post-body">
-                        <h3>Agentic Predictive Maintenance RAG 🤖</h3>
-                        <p>Excited to announce my new project: A multi-agent AI framework for predictive maintenance.
-                            Using LangChain and specialized agents to reduce industrial downtime!</p>
-                    </div>
-                    <div class="post-footer">
-                        <a href="https://tr.linkedin.com/in/fatih-hattatoglu-phd/recent-activity/all/" target="_blank"
-                            class="view-post">View Post <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="linkedin-post-card glass-card">
-                    <div class="post-header">
-                        <i class="fab fa-linkedin linkedin-icon"></i>
-                        <span class="post-date">Project Release</span>
-                    </div>
-                    <div class="post-body">
-                        <h3>New Books Published on Amazon 📚</h3>
-                        <p>I am thrilled to announce that my two new books, "Feature Engineering" and "Easy CNN &
-                            Computer Vision," are now available on Amazon. Check them out!</p>
-                    </div>
-                    <div class="post-footer">
-                        <a href="https://tr.linkedin.com/in/fatih-hattatoglu-phd/recent-activity/all/" target="_blank"
-                            class="view-post">View Post <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="center-btn">
-                <a href="https://tr.linkedin.com/in/fatih-hattatoglu-phd" target="_blank" class="btn btn-primary"><i
-                        class="fab fa-linkedin"></i> Connect on LinkedIn</a>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="section fade-in">
-            <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
-            <div class="about-grid">
-                <div class="about-text glass-card">
-                    <h3 class="card-title">My Journey</h3>
-                    <p>
-                        I specialize in building intelligent systems that can extract insights from unstructured data.
-                        From exploratory data analysis to deploying deep learning models, I bridge the gap between
-                        mathematics and software engineering.
+        <!-- Intro -->
+        <section class="intro">
+            <div class="container intro-grid">
+                <div class="intro-text">
+                    <p class="kicker">Data Science · Machine Learning · AI Consulting</p>
+                    <h1>I help organizations turn data into working AI systems.</h1>
+                    <p class="lead">
+                        I'm Fatih Hattatoglu — data scientist, AI consultant, author, and educator with over 25
+                        years of experience in education and applied analytics. I build machine learning and
+                        computer vision systems, write books on applied AI, and lecture on data science at
+                        universities and professional training programs.
                     </p>
-                    <p>
-                        Proficient in Python, SQL, and modern ML frameworks (TensorFlow, PyTorch, Scikit-Learn). Always
-                        exploring new ways to optimize algorithms and visualize complex datasets.
-                    </p>
-                </div>
-                <div class="skills-container glass-card">
-                    <h3 class="card-title">Tech Stack</h3>
-                    <div class="skills-grid">
-                        <div class="skill-tag"><i class="fab fa-python skill-icon"></i> Python</div>
-                        <div class="skill-tag"><i class="fas fa-database skill-icon"></i> SQL</div>
-                        <div class="skill-tag"><i class="fas fa-chart-line skill-icon"></i> Scikit-Learn</div>
-                        <div class="skill-tag"><i class="fas fa-brain skill-icon"></i> TensorFlow</div>
-                        <div class="skill-tag"><i class="fas fa-cubes skill-icon"></i> PyTorch</div>
-                        <div class="skill-tag"><i class="fas fa-table skill-icon"></i> Pandas</div>
-                        <div class="skill-tag"><i class="fab fa-aws skill-icon"></i> AWS</div>
-                        <div class="skill-tag"><i class="fab fa-docker skill-icon"></i> Docker</div>
+                    <div class="intro-actions">
+                        <a href="https://tr.linkedin.com/in/fatih-hattatoglu-phd" target="_blank" rel="noopener"
+                            class="btn btn-solid">LinkedIn</a>
+                        <a href="https://github.com/fhattat" target="_blank" rel="noopener"
+                            class="btn btn-ghost">GitHub</a>
+                        <a href="#contact" class="btn btn-ghost">Get in touch</a>
                     </div>
+                </div>
+                <div class="intro-photo">
+                    <img src="assets/profile_new.png" alt="Portrait of Fatih Hattatoglu">
                 </div>
             </div>
         </section>
 
-        <!-- Books Section -->
-        <section id="books" class="section fade-in">
-            <h2 class="section-title">Authored <span class="text-gradient">Books</span></h2>
-            <p class="section-desc">My latest publications covering Data Science, Feature Engineering, and Computer
-                Vision, now available on Amazon.</p>
-
-            <div class="books-grid">
-                <!-- Book 1 -->
-                <div class="book-card glass-card">
-                    <img src="assets/book1.png" alt="Feature Engineering" class="book-img">
-                    <div class="book-info">
-                        <h3>Feature Engineering</h3>
-                        <p>For ML Engineers and Data Science (The Path to Victory)</p>
-                        <a href="https://www.amazon.com/FEATURE-ENGINERING-Engineers-Science-Victory/dp/B0FTFZ2S9P"
-                            target="_blank" class="btn btn-sm btn-outline"><i class="fab fa-amazon"></i> Available on
-                            Amazon</a>
-                    </div>
-                </div>
-
-                <!-- Book 2 -->
-                <div class="book-card glass-card">
-                    <img src="assets/book2.png" alt="Easy CNN & COMPUTER VISION" class="book-img">
-                    <div class="book-info">
-                        <h3>Easy CNN & COMPUTER VISION</h3>
-                        <p>For Everyone: A straightforward approach to deep learning and neural networks</p>
-                        <a href="https://www.amazon.com.tr/Easy-CNN-COMPUTER-VISION-Everyone/dp/B0F4K55M3R"
-                            target="_blank" class="btn btn-sm btn-outline"><i class="fab fa-amazon"></i> Available on
-                            Amazon</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section (GitHub) -->
-        <section id="projects" class="section fade-in">
-            <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
-            <p class="section-desc">A selection of my recent work bridging data science and software engineering,
-                available on GitHub.</p>
-
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card glass-card">
-                    <div class="project-img-wrapper">
-                        <img src="assets/github_yolo.png" alt="YOLOv26 Inventory Counter" class="project-img">
-                        <div class="project-overlay">
-                            <a href="https://github.com/fhattat/YOLOv26-Smart-Inventory-Counter" class="overlay-btn"
-                                target="_blank"><i class="fab fa-github"></i> Repository</a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">YOLOv26 Smart Inventory</h3>
-                        <p class="project-desc">High-performance real-time object counting system for conveyor belts
-                            using YOLOv26 and custom coordinate-based logic.</p>
-                        <div class="project-tags">
-                            <span class="tag">YOLOv26</span>
-                            <span class="tag">Computer Vision</span>
-                            <span class="tag">FastAPI</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card glass-card">
-                    <div class="project-img-wrapper">
-                        <img src="assets/github_invoice.png" alt="Agentic Invoice Intelligence" class="project-img">
-                        <div class="project-overlay">
-                            <a href="https://github.com/fhattat/Agentic-Invoice-Intelligence" class="overlay-btn"
-                                target="_blank"><i class="fab fa-github"></i> Repository</a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Agentic Invoice AI</h3>
-                        <p class="project-desc">An agentic platform to process multi-format invoices using LLMs and
-                            structured parsing for automated accounting.</p>
-                        <div class="project-tags">
-                            <span class="tag">LLMs</span>
-                            <span class="tag">LangChain</span>
-                            <span class="tag">Python</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card glass-card">
-                    <div class="project-img-wrapper">
-                        <img src="assets/github_nyc.png" alt="NYC Housing Medallion Architecture" class="project-img">
-                        <div class="project-overlay">
-                            <a href="https://github.com/fhattat/NYC-Housing-Medallion-Architecture" class="overlay-btn"
-                                target="_blank"><i class="fab fa-github"></i> Repository</a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">NYC Housing Medallion</h3>
-                        <p class="project-desc">End-to-End ETL Pipeline & BI Dashboard following the Medallion
-                            Architecture (Bronze, Silver, Gold) for NYC housing trends.</p>
-                        <div class="project-tags">
-                            <span class="tag">ETL</span>
-                            <span class="tag">Databricks</span>
-                            <span class="tag">PySpark</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card glass-card">
-                    <div class="project-img-wrapper">
-                        <img src="assets/project4.png" alt="Agentic Pred Maintenance RAG" class="project-img">
-                        <div class="project-overlay">
-                            <a href="https://github.com/fhattat/agentic-pred-maintenance-rag" class="overlay-btn"
-                                target="_blank"><i class="fab fa-github"></i> Repository</a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Agentic Maintenance RAG</h3>
-                        <p class="project-desc">Multi-Agent AI System for Industrial Predictive Maintenance featuring 3
-                            specialized agents collaborating to resolve technical issues.</p>
-                        <div class="project-tags">
-                            <span class="tag">LangChain</span>
-                            <span class="tag">LLMs</span>
-                            <span class="tag">RAG</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="project-card glass-card">
-                    <div class="project-img-wrapper">
-                        <img src="assets/project_fraud.png" alt="MLOps Fraud Detection" class="project-img">
-                        <div class="project-overlay">
-                            <a href="https://github.com/fhattat/MLOps---Fraud-Detection" class="overlay-btn"
-                                target="_blank"><i class="fab fa-github"></i> Repository</a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">MLOps Fraud Detection</h3>
-                        <p class="project-desc">A comprehensive end-to-end MLOps pipeline for real-time credit card
-                            fraud detection, transitioning models securely to production.</p>
-                        <div class="project-tags">
-                            <span class="tag">MLOps</span>
-                            <span class="tag">XGBoost</span>
-                            <span class="tag">FastAPI</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="center-btn">
-                <a href="https://github.com/fhattat" target="_blank" class="btn btn-outline"><i
-                        class="fab fa-github"></i> View more on GitHub</a>
-            </div>
-        </section>
-
-        <!-- Tableau Section -->
-        <section id="tableau" class="section fade-in">
-            <h2 class="section-title">Tableau <span class="text-gradient">Showcase</span></h2>
-            <p class="section-desc">Interactive data storytelling through advanced Tableau visualizations and
-                dashboards.</p>
-
-            <div class="tableau-grid">
-                <div class="tableau-card glass-card">
-                    <img src="assets/traffic_viz.png" alt="UK Traffic Accident" class="viz-img">
-                    <div class="viz-info">
-                        <h3>Traffic Accident Dashboard (UK)</h3>
-                        <p>Comprehensive analysis of traffic incidents with temporal and spatial insights across the UK.
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About</h2>
+                <div class="about-grid">
+                    <div class="about-body">
+                        <p>
+                            My background combines a PhD, a long teaching career, and hands-on work in applied
+                            analytics. Today I split my time between three things: consulting on AI and data
+                            science projects, writing technical books and articles, and teaching — from
+                            university lectures to professional training programs.
+                        </p>
+                        <p>
+                            On the technical side, I work mostly on machine learning, deep learning, and computer
+                            vision, with a growing focus on agentic LLM systems and MLOps. I care as much about
+                            how models reach production — pipelines, monitoring, deployment — as about the models
+                            themselves, and I use Tableau and data storytelling to make results legible to
+                            non-technical audiences.
                         </p>
                     </div>
-                    <div class="viz-actions">
-                        <a href="https://public.tableau.com/app/profile/fatih1501" target="_blank"
-                            class="btn btn-sm btn-primary">View Viz</a>
+                    <div class="about-aside">
+                        <h3>Areas of focus</h3>
+                        <ul class="plain-list">
+                            <li>Machine learning &amp; deep learning</li>
+                            <li>Computer vision (CNNs, YOLO)</li>
+                            <li>Agentic LLM systems &amp; RAG</li>
+                            <li>MLOps &amp; model deployment</li>
+                            <li>Data engineering &amp; ETL</li>
+                            <li>BI, Tableau &amp; data storytelling</li>
+                        </ul>
+                        <h3>Tools I use daily</h3>
+                        <p class="tools-line">Python, SQL, Pandas, Scikit-Learn, TensorFlow, PyTorch, LangChain,
+                            FastAPI, Docker, AWS, Databricks, Tableau</p>
                     </div>
                 </div>
-                <div class="tableau-card glass-card">
-                    <img src="assets/customer_viz.png" alt="Customer Segment Dashboard" class="viz-img">
-                    <div class="viz-info">
-                        <h3>Customer Segment Analysis</h3>
-                        <p>In-depth dashboard analyzing customer behaviors, segments, and lifetime value metrics.</p>
-                    </div>
-                    <div class="viz-actions">
-                        <a href="https://public.tableau.com/app/profile/fatih1501" target="_blank"
-                            class="btn btn-sm btn-primary">View Viz</a>
-                    </div>
-                </div>
-                <div class="tableau-card glass-card">
-                    <img src="assets/timeseries_viz.png" alt="Time-Series Forecasting" class="viz-img">
-                    <div class="viz-info">
-                        <h3>Time-Series Forecasting</h3>
-                        <p>Predictive dashboard focusing on future trends using advanced time-series analysis
-                            techniques.</p>
-                    </div>
-                    <div class="viz-actions">
-                        <a href="https://public.tableau.com/app/profile/fatih1501" target="_blank"
-                            class="btn btn-sm btn-primary">View Viz</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="center-btn">
-                <a href="https://public.tableau.com/app/profile/fatih1501" target="_blank" class="btn btn-outline"><i
-                        class="fas fa-chart-pie"></i> View Tableau Profile</a>
             </div>
         </section>
 
-        <!-- Insights / Articles / Kaggle -->
-        <section id="insights" class="section fade-in">
-            <h2 class="section-title">Articles & <span class="text-gradient">Insights</span></h2>
-            <p class="section-desc">My thoughts on data science, machine learning models, and data exploration on
-                platforms like Kaggle and Medium.</p>
-
-            <div class="insights-grid">
-                <!-- Medium Article 1 -->
-                <a href="https://fhattat.medium.com/data-science-projects-to-be-done-in-2026-09202073d44f"
-                    target="_blank" class="insight-card glass-card abstract-hover">
-                    <div class="insight-header">
-                        <span class="platform medium"><i class="fab fa-medium"></i> Medium</span>
-                        <span class="date">Feb 2026</span>
+        <!-- Teaching & Talks -->
+        <section id="teaching" class="section">
+            <div class="container">
+                <h2 class="section-title">Teaching &amp; Talks</h2>
+                <p class="section-note">Beyond building systems, I spend a large part of my time teaching AI and
+                    talking about it — in classrooms, at universities, and online.</p>
+                <div class="teaching-grid">
+                    <div class="teaching-item">
+                        <h3>AI &amp; Data Science Instructor</h3>
+                        <p>Courses on machine learning, CNNs &amp; computer vision, SQL, statistics, and Tableau.</p>
                     </div>
-                    <h3 class="insight-title">Data Science Projects to be Done in 2026</h3>
-                    <p class="insight-excerpt">A comprehensive guide on high-impact DS projects for the next level of
-                        professional maturity in the evolving AI landscape...</p>
-                    <div class="insight-footer">Read Article <i class="fas fa-arrow-right"></i></div>
-                </a>
-
-                <!-- Medium Article 2 -->
-                <a href="https://fhattat.medium.com/mlops-driven-fraud-detection-a-comprehensive-end-to-end-journey-34fe48922010"
-                    target="_blank" class="insight-card glass-card abstract-hover">
-                    <div class="insight-header">
-                        <span class="platform medium"><i class="fab fa-medium"></i> Medium</span>
-                        <span class="date">Feb 2026</span>
+                    <div class="teaching-item">
+                        <h3>Invited University Speaker</h3>
+                        <p>Guest lectures and seminars on AI and data science at universities.</p>
                     </div>
-                    <h3 class="insight-title">MLOps-Driven Fraud Detection</h3>
-                    <p class="insight-excerpt">A deep dive into building 'FraudGuard AI' for real-time credit card fraud
-                        detection using MLOps principles and production-ready pipelines...</p>
-                    <div class="insight-footer">Read Article <i class="fas fa-arrow-right"></i></div>
-                </a>
-
-                <!-- Medium Article 3 -->
-                <a href="https://fhattat.medium.com/implementing-a-multi-agent-approach-by-3-agents-in-an-industrial-project-71908a5467f0"
-                    target="_blank" class="insight-card glass-card abstract-hover">
-                    <div class="insight-header">
-                        <span class="platform medium"><i class="fab fa-medium"></i> Medium</span>
-                        <span class="date">Mar 2026</span>
+                    <div class="teaching-item">
+                        <h3>AI Book Author</h3>
+                        <p>Author of technical books on applied machine learning, published on Amazon.</p>
                     </div>
-                    <h3 class="insight-title">Implementing a Multi-Agent Approach in an Industrial Project</h3>
-                    <p class="insight-excerpt">A deep dive into developing an advanced Multi-Agent system to solve
-                        complex industrial project challenges using LangChain and RAG workflows...</p>
-                    <div class="insight-footer">Read Article <i class="fas fa-arrow-right"></i></div>
-                </a>
-            </div>
-
-            <div class="platform-links">
-                <a href="https://fhattat.medium.com/" target="_blank" class="profile-link medium-btn"><i
-                        class="fab fa-medium"></i> Medium Profile</a>
-                <a href="https://public.tableau.com/app/profile/fatih1501" target="_blank"
-                    class="profile-link tableau-btn"><i class="fas fa-chart-line"></i> Tableau Profile</a>
+                    <div class="teaching-item">
+                        <h3>Columnist</h3>
+                        <p>Technical columns and articles on Medium and in newspapers.</p>
+                    </div>
+                    <div class="teaching-item">
+                        <h3>Data Science Project Director</h3>
+                        <p>Directing end-to-end data science projects from scoping to delivery.</p>
+                    </div>
+                    <div class="teaching-item">
+                        <h3>AI Project Consulting</h3>
+                        <p>Advisory work on industrial AI and data science initiatives.</p>
+                    </div>
+                    <div class="teaching-item">
+                        <h3>YouTube Conversations</h3>
+                        <p>Recorded talks and interviews on AI and the data profession.</p>
+                    </div>
+                    <div class="teaching-item">
+                        <h3>AI Communities</h3>
+                        <p>Active member and contributor in AI and data communities.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Connect Section -->
-        <section id="contact" class="section fade-in">
-            <h2 class="section-title">Let's <span class="text-gradient">Connect</span></h2>
-            <div class="contact-card glass-card">
-                <p class="contact-text">
-                    I'm currently looking for new opportunities and collaborations. Whether you have a question, a
-                    project idea, or just want to say hi, my inbox is always open!
+        <!-- Books -->
+        <section id="books" class="section">
+            <div class="container">
+                <h2 class="section-title">Books</h2>
+                <p class="section-note">Technical books I've written on applied machine learning, available on
+                    Amazon.</p>
+                <div class="books-grid">
+                    <article class="book">
+                        <a href="https://www.amazon.com/FEATURE-ENGINERING-Engineers-Science-Victory/dp/B0FTFZ2S9P"
+                            target="_blank" rel="noopener" class="book-cover">
+                            <img src="assets/book1.png" alt="Cover of Feature Engineering">
+                        </a>
+                        <h3>Feature Engineering</h3>
+                        <p>A practical guide to feature engineering for ML engineers and data scientists.</p>
+                        <a href="https://www.amazon.com/FEATURE-ENGINERING-Engineers-Science-Victory/dp/B0FTFZ2S9P"
+                            target="_blank" rel="noopener" class="text-link">View on Amazon</a>
+                    </article>
+                    <article class="book">
+                        <a href="https://www.amazon.com.tr/Easy-CNN-COMPUTER-VISION-Everyone/dp/B0F4K55M3R"
+                            target="_blank" rel="noopener" class="book-cover">
+                            <img src="assets/book2.png" alt="Cover of Easy CNN &amp; Computer Vision">
+                        </a>
+                        <h3>Easy CNN &amp; Computer Vision</h3>
+                        <p>A straightforward introduction to convolutional networks and computer vision.</p>
+                        <a href="https://www.amazon.com.tr/Easy-CNN-COMPUTER-VISION-Everyone/dp/B0F4K55M3R"
+                            target="_blank" rel="noopener" class="text-link">View on Amazon</a>
+                    </article>
+                    <article class="book">
+                        <a href="https://www.amazon.com/dp/B0H1WTHNX3" target="_blank" rel="noopener"
+                            class="book-cover">
+                            <img src="assets/book3.jpg" alt="Cover of Machine Learning Best Practices">
+                        </a>
+                        <h3>Machine Learning Best Practices</h3>
+                        <p>Building, deploying, and monitoring ML systems in production — no theory, all
+                            practice.</p>
+                        <a href="https://www.amazon.com/dp/B0H1WTHNX3" target="_blank" rel="noopener"
+                            class="text-link">View on Amazon</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Selected projects</h2>
+                <p class="section-note">Open-source work from my GitHub, spanning computer vision, agentic AI,
+                    and data engineering.</p>
+                <div class="projects-grid">
+                    <article class="project">
+                        <a href="https://github.com/fhattat/YOLOv26-Smart-Inventory-Counter" target="_blank"
+                            rel="noopener" class="project-image">
+                            <img src="assets/github_yolo.png" alt="YOLOv26 Smart Inventory Counter screenshot">
+                        </a>
+                        <div class="project-body">
+                            <h3><a href="https://github.com/fhattat/YOLOv26-Smart-Inventory-Counter"
+                                    target="_blank" rel="noopener">YOLOv26 Smart Inventory Counter</a></h3>
+                            <p>Real-time object counting for conveyor belts using YOLOv26 with custom
+                                coordinate-based counting logic.</p>
+                            <p class="project-meta"><span>YOLOv26</span><span>Computer Vision</span><span>FastAPI</span></p>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <a href="https://github.com/fhattat/Agentic-Invoice-Intelligence" target="_blank"
+                            rel="noopener" class="project-image">
+                            <img src="assets/github_invoice.png" alt="Agentic Invoice Intelligence screenshot">
+                        </a>
+                        <div class="project-body">
+                            <h3><a href="https://github.com/fhattat/Agentic-Invoice-Intelligence" target="_blank"
+                                    rel="noopener">Agentic Invoice Intelligence</a></h3>
+                            <p>An agentic platform that processes multi-format invoices with LLMs and structured
+                                parsing for automated accounting.</p>
+                            <p class="project-meta"><span>LLMs</span><span>LangChain</span><span>Python</span></p>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <a href="https://github.com/fhattat/NYC-Housing-Medallion-Architecture" target="_blank"
+                            rel="noopener" class="project-image">
+                            <img src="assets/github_nyc.png" alt="NYC Housing Medallion Architecture screenshot">
+                        </a>
+                        <div class="project-body">
+                            <h3><a href="https://github.com/fhattat/NYC-Housing-Medallion-Architecture"
+                                    target="_blank" rel="noopener">NYC Housing Medallion Architecture</a></h3>
+                            <p>End-to-end ETL pipeline and BI dashboard for NYC housing trends, built on the
+                                Bronze–Silver–Gold medallion pattern.</p>
+                            <p class="project-meta"><span>ETL</span><span>Databricks</span><span>PySpark</span></p>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <a href="https://github.com/fhattat/agentic-pred-maintenance-rag" target="_blank"
+                            rel="noopener" class="project-image">
+                            <img src="assets/project4.png" alt="Agentic predictive maintenance RAG screenshot">
+                        </a>
+                        <div class="project-body">
+                            <h3><a href="https://github.com/fhattat/agentic-pred-maintenance-rag" target="_blank"
+                                    rel="noopener">Agentic Predictive Maintenance RAG</a></h3>
+                            <p>A multi-agent system for industrial predictive maintenance, with three specialized
+                                agents collaborating over a RAG pipeline.</p>
+                            <p class="project-meta"><span>LangChain</span><span>RAG</span><span>Multi-agent</span></p>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <a href="https://github.com/fhattat/MLOps---Fraud-Detection" target="_blank" rel="noopener"
+                            class="project-image">
+                            <img src="assets/project_fraud.png" alt="MLOps fraud detection screenshot">
+                        </a>
+                        <div class="project-body">
+                            <h3><a href="https://github.com/fhattat/MLOps---Fraud-Detection" target="_blank"
+                                    rel="noopener">MLOps Fraud Detection</a></h3>
+                            <p>An end-to-end MLOps pipeline for real-time credit card fraud detection, from
+                                training through monitored production deployment.</p>
+                            <p class="project-meta"><span>MLOps</span><span>XGBoost</span><span>FastAPI</span></p>
+                        </div>
+                    </article>
+                </div>
+                <p class="section-cta"><a href="https://github.com/fhattat" target="_blank" rel="noopener"
+                        class="text-link">More on GitHub</a></p>
+            </div>
+        </section>
+
+        <!-- Dashboards -->
+        <section id="dashboards" class="section">
+            <div class="container">
+                <h2 class="section-title">Tableau dashboards</h2>
+                <p class="section-note">Live, interactive dashboards from my Tableau Public profile — click a tab
+                    and explore the data right here.</p>
+                <div class="viz-tabs" role="tablist">
+                    <button class="viz-tab active"
+                        data-src="https://public.tableau.com/views/TrafficAccidentDashboardforUK/Dashboard1">UK
+                        Traffic Accidents</button>
+                    <button class="viz-tab"
+                        data-src="https://public.tableau.com/views/customer_segm_dashboard_analysis/Dashboard2">Customer
+                        Segments</button>
+                    <button class="viz-tab"
+                        data-src="https://public.tableau.com/views/time-series-forecasting/Story1">Time-Series
+                        Forecasting</button>
+                </div>
+                <div class="viz-embed">
+                    <tableau-viz id="tableau-viz"
+                        src="https://public.tableau.com/views/TrafficAccidentDashboardforUK/Dashboard1"
+                        toolbar="bottom" hide-tabs></tableau-viz>
+                </div>
+                <p class="section-cta"><a href="https://public.tableau.com/app/profile/fatih1501" target="_blank"
+                        rel="noopener" class="text-link">Tableau Public profile</a></p>
+            </div>
+        </section>
+
+        <!-- Writing -->
+        <section id="writing" class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-title">Writing</h2>
+                    <a class="medium-badge" href="https://fhattat.medium.com/" target="_blank" rel="noopener"
+                        aria-label="Medium profile">
+                        <svg viewBox="0 0 1043.63 592.71" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path
+                                d="M588.67 296.36c0 163.67-131.78 296.35-294.33 296.35S0 460 0 296.36 131.78 0 294.34 0s294.33 132.69 294.33 296.36M911.56 296.36c0 154.06-65.89 279-147.17 279s-147.17-124.94-147.17-279 65.88-279 147.16-279 147.17 124.9 147.17 279M1043.63 296.36c0 138-23.17 249.94-51.76 249.94s-51.75-111.91-51.75-249.94 23.17-249.94 51.75-249.94 51.76 111.9 51.76 249.94" />
+                        </svg>
+                        Medium
+                    </a>
+                </div>
+                <p class="section-note">Recent technical articles on Medium.</p>
+                <div class="writing-list">
+                    <a class="writing-item"
+                        href="https://fhattat.medium.com/implementing-a-multi-agent-approach-by-3-agents-in-an-industrial-project-71908a5467f0"
+                        target="_blank" rel="noopener">
+                        <span class="writing-date">Mar 2026</span>
+                        <span class="writing-title">Implementing a Multi-Agent Approach in an Industrial
+                            Project</span>
+                        <span class="writing-desc">Designing a three-agent system with LangChain and RAG for a
+                            real industrial use case.</span>
+                    </a>
+                    <a class="writing-item"
+                        href="https://fhattat.medium.com/mlops-driven-fraud-detection-a-comprehensive-end-to-end-journey-34fe48922010"
+                        target="_blank" rel="noopener">
+                        <span class="writing-date">Feb 2026</span>
+                        <span class="writing-title">MLOps-Driven Fraud Detection</span>
+                        <span class="writing-desc">Building a real-time credit card fraud detection system with
+                            production-ready MLOps pipelines.</span>
+                    </a>
+                    <a class="writing-item"
+                        href="https://fhattat.medium.com/data-science-projects-to-be-done-in-2026-09202073d44f"
+                        target="_blank" rel="noopener">
+                        <span class="writing-date">Feb 2026</span>
+                        <span class="writing-title">Data Science Projects to Be Done in 2026</span>
+                        <span class="writing-desc">High-impact project ideas for data scientists who want to
+                            level up in the current AI landscape.</span>
+                    </a>
+                </div>
+                <p class="section-cta"><a href="https://fhattat.medium.com/" target="_blank" rel="noopener"
+                        class="text-link">All articles on Medium</a></p>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section section-contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <p class="contact-lead">
+                    I'm open to consulting engagements, teaching collaborations, and interesting data problems.
+                    The fastest way to reach me is email or LinkedIn.
                 </p>
-                <div class="social-grid">
-                    <a href="https://tr.linkedin.com/in/fatih-hattatoglu-phd" target="_blank" class="social-item">
-                        <div class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></div>
-                        <span class="social-name">LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/fhattat" target="_blank" class="social-item">
-                        <div class="social-icon github"><i class="fab fa-github"></i></div>
-                        <span class="social-name">GitHub</span>
-                    </a>
-                    <a href="mailto:fatihhattatoglu@gmail.com" class="social-item">
-                        <div class="social-icon email"><i class="fas fa-envelope"></i></div>
-                        <span class="social-name">Email</span>
-                    </a>
-
+                <div class="contact-links">
+                    <a href="mailto:fatihhattatoglu@gmail.com" class="btn btn-solid">fatihhattatoglu@gmail.com</a>
+                    <a href="https://tr.linkedin.com/in/fatih-hattatoglu-phd" target="_blank" rel="noopener"
+                        class="btn btn-ghost">LinkedIn</a>
+                    <a href="https://github.com/fhattat" target="_blank" rel="noopener"
+                        class="btn btn-ghost">GitHub</a>
                 </div>
             </div>
         </section>
+
     </main>
 
-    <footer>
-        <p>&copy; 2026 Data Science Portfolio. Built with <i class="fas fa-heart text-gradient"></i> & Data.</p>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2026 Fatih Hattatoglu</p>
+            <p class="footer-links">
+                <a href="https://tr.linkedin.com/in/fatih-hattatoglu-phd" target="_blank"
+                    rel="noopener">LinkedIn</a>
+                <a href="https://github.com/fhattat" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://fhattat.medium.com/" target="_blank" rel="noopener">Medium</a>
+                <a href="https://public.tableau.com/app/profile/fatih1501" target="_blank"
+                    rel="noopener">Tableau</a>
+            </p>
+        </div>
     </footer>
 
+    <script type="module"
+        src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
     <script src="script.js"></script>
 </body>
 

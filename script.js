@@ -1,48 +1,30 @@
-// Add scroll event listener to navbar
-const navbar = document.querySelector('.navbar');
+// Mobile navigation toggle
+const menuToggle = document.getElementById('menu-toggle');
+const siteNav = document.getElementById('site-nav');
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
+menuToggle.addEventListener('click', () => {
+    const isOpen = siteNav.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
 });
 
-// Mobile menu toggle
-const mobileMenuBtn = document.getElementById('mobile-menu');
-const navMenu = document.querySelector('.nav-menu');
-
-mobileMenuBtn.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-});
-
-// Implementation of Intersection Observer for fade-in animations
-const observerOptions = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.15
-};
-
-const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            // Optional: stop observing once it has become visible
-            // observer.unobserve(entry.target); 
-        }
-    });
-}, observerOptions);
-
-document.querySelectorAll('.fade-in').forEach((el) => {
-    observer.observe(el);
-});
-
-// Close mobile menu when a link is clicked
-document.querySelectorAll('.nav-menu a').forEach(link => {
+// Close the mobile menu after navigating
+siteNav.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
-        if (navMenu.classList.contains('active')) {
-            navMenu.classList.remove('active');
-        }
+        siteNav.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
     });
 });
+
+// Tableau dashboard tabs
+const vizTabs = document.querySelectorAll('.viz-tab');
+const tableauViz = document.getElementById('tableau-viz');
+
+if (tableauViz) {
+    vizTabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+            vizTabs.forEach((t) => t.classList.remove('active'));
+            tab.classList.add('active');
+            tableauViz.setAttribute('src', tab.dataset.src);
+        });
+    });
+}
